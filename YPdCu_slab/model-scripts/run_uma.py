@@ -22,7 +22,7 @@ ads_slab = read(sys.argv[1], format="vasp")
 predictor = pretrained_mlip.get_predict_unit("uma-s-1p2", device="cpu")
 
 calc = FAIRChemCalculator(predictor, task_name="oc20", seed=None)
-calc.device = sys.arg[3]
+calc.device = sys.argv[3]
 ads_slab.calc = calc
 
 opt = BFGS(ads_slab, trajectory=sys.argv[2])
