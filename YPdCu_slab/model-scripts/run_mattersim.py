@@ -18,7 +18,7 @@ from mattersim.forcefield import MatterSimCalculator
 
 ads_slab = read(sys.argv[1], format="vasp")
 
-calc = MatterSimCalculator(device=sys.arg[3])
+calc = MatterSimCalculator(device=sys.argv[3])
 
 ads_slab.calc = calc  # no mps option, runs on cpu
 
