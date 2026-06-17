@@ -9,3 +9,6 @@
 
 # generated data
 dft-data/
+
+# generated xyz/npz files
+# model-scripts/script-data/
